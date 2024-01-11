@@ -14,7 +14,6 @@ app.use(bodyParser.json());
 // Connect to MongoDB
 connectDB();
 
-app.use("/", (req, res) => res.json({ message: "Hello from TodoTracker" }));
 app.use("/auth", authRoutes);
 app.use("/user", userRoutes);
 app.use("/todos", todoRoutes);
